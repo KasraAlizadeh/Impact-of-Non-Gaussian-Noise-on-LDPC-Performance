@@ -32,3 +32,15 @@ The BER performance was evaluated for both AWGN and non-Gaussian noise condition
 ## Conclusion
 
 LDPC codes improve communication system robustness under Gaussian noise but require higher SNR for non-Gaussian noise environments. Future work could explore adaptive modulation and coding schemes for enhanced reliability in various noise environments.
+
+
+## Authors
+
+- Stefano Biccari
+- Karsa Alizadeh
+- Pouria Saadatikhoshrou
+
+## License
+
+This project is licensed under the MIT License.
+
