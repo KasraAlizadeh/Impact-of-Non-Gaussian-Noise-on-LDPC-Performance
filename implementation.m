@@ -140,7 +140,7 @@ xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 2. Figure with two plots for 32-QAM (LDPC coded and uncoded)
+% 2. Figure with two plots for CROSS-QAM (LDPC coded and uncoded)
 figure;
 semilogy(EbN0_dB_uncoded, berAWGN_uncoded(1, :), 'b', 'LineWidth', 2);
 hold on;
@@ -150,13 +150,13 @@ semilogy(EbN0_dB_coded, berNonGaussian_coded(1, :), 'm', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM AWGN without LDPC', '32-cross QAM AWGN with LDPC', '32-cross QAM Non-Gaussian without LDPC', '32-cross QAM Non-Gaussian with LDPC');
-title('BER Performance of 32-QAM (LDPC Coded vs Uncoded) in AWGN and Non-Gaussian Noise');
+legend('CROSS-QAM AWGN without LDPC', 'CROSS-QAM AWGN with LDPC', 'CROSS-QAM Non-Gaussian without LDPC', 'CROSS-QAM Non-Gaussian with LDPC');
+title('BER Performance of CROSS-QAM (LDPC Coded vs Uncoded) in AWGN and Non-Gaussian Noise');
 xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 3. Figure with one plot for 64-QAM and 32-QAM in LDPC coded
+% 3. Figure with one plot for 64-QAM and CROSS-QAM in LDPC coded
 figure;
 semilogy(EbN0_dB_coded, berAWGN_coded(1, :), 'b', 'LineWidth', 2);
 hold on;
@@ -166,13 +166,13 @@ semilogy(EbN0_dB_coded, berNonGaussian_coded(2, :), 'm', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM LDPC coded AWGN', '64-QAM LDPC coded AWGN', '32-cross QAM LDPC coded Non-Gaussian', '64-QAM LDPC coded Non-Gaussian');
+legend('CROSS-QAM LDPC coded AWGN', '64-QAM LDPC coded AWGN', 'CROSS-QAM LDPC coded Non-Gaussian', '64-QAM LDPC coded Non-Gaussian');
 title('BER Performance of LDPC Coded QAM in AWGN and Non-Gaussian Noise');
 xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 4. Figure with one plot for 64-QAM and 32-QAM without LDPC
+% 4. Figure with one plot for 64-QAM and CROSS-QAM without LDPC
 figure;
 semilogy(EbN0_dB_uncoded, berAWGN_uncoded(1, :), 'b', 'LineWidth', 2);
 hold on;
@@ -182,7 +182,7 @@ semilogy(EbN0_dB_uncoded, berNonGaussian_uncoded(2, :), 'm', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM without LDPC AWGN', '64-QAM without LDPC AWGN', '32-cross QAM without LDPC Non-Gaussian', '64-QAM without LDPC Non-Gaussian');
+legend('CROSS-QAM without LDPC AWGN', '64-QAM without LDPC AWGN', 'CROSS-QAM without LDPC Non-Gaussian', '64-QAM without LDPC Non-Gaussian');
 title('BER Performance of Uncoded QAM in AWGN and Non-Gaussian Noise');
 xlim([0 13]);
 ylim([1e-3 1]);
@@ -216,7 +216,7 @@ xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 7. Figure with one plot for 32-cross QAM in LDPC coded
+% 7. Figure with one plot for CROSS-QAM in LDPC coded
 figure;
 semilogy(EbN0_dB_coded, berAWGN_coded(1, :), 'r', 'LineWidth', 2);
 hold on;
@@ -224,13 +224,13 @@ semilogy(EbN0_dB_coded, berNonGaussian_coded(1, :), 'm', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM LDPC coded AWGN', '32-cross QAM LDPC coded Non-Gaussian');
-title('BER Performance of 32-cross QAM in AWGN and Non-Gaussian Noise (LDPC coded)');
+legend('CROSS-QAM LDPC coded AWGN', 'CROSS-QAM LDPC coded Non-Gaussian');
+title('BER Performance of CROSS-QAM in AWGN and Non-Gaussian Noise (LDPC coded)');
 xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 8. Figure with one plot for 32-cross QAM in without LDPC coded
+% 8. Figure with one plot for CROSS-QAM in without LDPC coded
 figure;
 semilogy(EbN0_dB_uncoded, berAWGN_uncoded(1, :), 'b', 'LineWidth', 2);
 hold on;
@@ -238,13 +238,13 @@ semilogy(EbN0_dB_uncoded, berNonGaussian_uncoded(1, :), 'g', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM without LDPC AWGN', '32-cross QAM without LDPC Non-Gaussian');
-title('BER Performance of 32-cross QAM in AWGN and Non-Gaussian Noise (uncoded)');
+legend('CROSS-QAM without LDPC AWGN', 'CROSS-QAM without LDPC Non-Gaussian');
+title('BER Performance of CROSS-QAM in AWGN and Non-Gaussian Noise (uncoded)');
 xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 9. Figure with one plot for 32-cross QAM and 64-QAM in without LDPC coded
+% 9. Figure with one plot for CROSS-QAM and 64-QAM in without LDPC coded
 figure;
 semilogy(EbN0_dB_uncoded, berAWGN_uncoded(1, :), 'b', 'LineWidth', 2);
 hold on;
@@ -254,13 +254,13 @@ semilogy(EbN0_dB_uncoded, berNonGaussian_uncoded(2, :), 'm', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM without LDPC AWGN', '64-QAM without LDPC AWGN', '32-cross QAM without LDPC Non-Gaussian', '64-QAM without LDPC Non-Gaussian');
-title('BER Performance of 32-cross QAM and 64-QAM in AWGN and Non-Gaussian Noise (uncoded)');
+legend('CROSS-QAM without LDPC AWGN', '64-QAM without LDPC AWGN', 'CROSS-QAM without LDPC Non-Gaussian', '64-QAM without LDPC Non-Gaussian');
+title('BER Performance of CROSS-QAM and 64-QAM in AWGN and Non-Gaussian Noise (uncoded)');
 xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
 
-% 10. Figure with one plot for 32-cross QAM and 64-QAM in with LDPC coded
+% 10. Figure with one plot for CROSS-QAM and 64-QAM in with LDPC coded
 figure;
 semilogy(EbN0_dB_coded, berAWGN_coded(1, :), 'b', 'LineWidth', 2);
 hold on;
@@ -270,8 +270,8 @@ semilogy(EbN0_dB_coded, berNonGaussian_coded(2, :), 'm', 'LineWidth', 2);
 grid on;
 xlabel('SNR (dB)');
 ylabel('BER');
-legend('32-cross QAM LDPC coded AWGN', '64-QAM LDPC coded AWGN', '32-cross QAM LDPC coded Non-Gaussian', '64-QAM LDPC coded Non-Gaussian');
-title('BER Performance of 32-cross QAM and 64-QAM in AWGN and Non-Gaussian Noise (LDPC coded)');
+legend('CROSS-QAM LDPC coded AWGN', '64-QAM LDPC coded AWGN', 'CROSS-QAM LDPC coded Non-Gaussian', '64-QAM LDPC coded Non-Gaussian');
+title('BER Performance of CROSS-QAM and 64-QAM in AWGN and Non-Gaussian Noise (LDPC coded)');
 xlim([0 13]);
 ylim([1e-3 1]);
 hold off;
