@@ -4,6 +4,10 @@
 
 This project investigates the performance of Low-Density Parity-Check (LDPC) codes under non-Gaussian noise conditions. The primary goal is to simulate an LDPC-coded 64-QAM system and evaluate its Bit Error Rate (BER) and Signal-to-Noise Ratio (SNR) performance under both Additive White Gaussian Noise (AWGN) and non-Gaussian noise.
 
+## Collaboration
+
+This project is a collaboration between Politecnico di Milano and Nokia Corporation. It was presented at Nokia Corporation located in Vimercate, Lombardia, Italy. The project was supervised by Professor Maurizio Magarini.
+
 ## Objectives
 
 1. **Simulation under AWGN**:
@@ -33,14 +37,18 @@ The BER performance was evaluated for both AWGN and non-Gaussian noise condition
 
 LDPC codes improve communication system robustness under Gaussian noise but require higher SNR for non-Gaussian noise environments. Future work could explore adaptive modulation and coding schemes for enhanced reliability in various noise environments.
 
+## Supervisor
+
+- Professor Maurizio Magarini
 
 ## Authors
-
+- Kasra Alizadeh
 - Stefano Biccari
-- Karsa Alizadeh
 - Pouria Saadatikhoshrou
+
 
 ## License
 
 This project is licensed under the MIT License.
+
 
